@@ -37,7 +37,9 @@ jobs:
             ## Required for shinylive >= 0.3.0
             packages: |
               cran::shinylive@0.3.0 
+            extra-packages:
               local::.
+            # from setup-r-dependencies website
   
         # Export the current working directory as the shiny app
         # using the pinned version of the Shinylive R package
