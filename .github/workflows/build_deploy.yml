@@ -37,9 +37,10 @@ jobs:
             ## Install required dependencies from the DESCRIPTION file
             ## Required for shinylive >= 0.3.0
             packages: |
-              cran::shinylive@0.3.0, shinythemes
-            #extra-packages:
-            #  local::.
+              cran::shinylive@0.3.0
+              shinythemes
+            extra-packages:  local::.
+            needs: website
             # from setup-r-dependencies website
   
         # Export the current working directory as the shiny app
